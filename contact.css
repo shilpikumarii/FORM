@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #83a4d4, #b6fbff);
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  color: #555;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.8em;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+  height: 16px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  display: block;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  display: block;
+}
